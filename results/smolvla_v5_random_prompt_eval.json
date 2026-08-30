@@ -1,0 +1,515 @@
+{
+  "task": "IsaacContrib-Pick-Place-Areumii-IK-Abs-Record",
+  "prompt_mode": "cube_y",
+  "fixed_prompt": null,
+  "left_prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+  "right_prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+  "robot_type": "areumii_c1",
+  "policy_period_s": 0.05,
+  "env_step_dt_s": 0.05,
+  "action_repeat": 1,
+  "horizon_policy_steps": 150,
+  "num_rollouts": 30,
+  "num_success": 20,
+  "success_rate": 0.6666666666666666,
+  "per_arm": {
+    "left": {
+      "num_rollouts": 14,
+      "num_success": 8,
+      "success_rate": 0.5714285714285714
+    },
+    "right": {
+      "num_rollouts": 16,
+      "num_success": 12,
+      "success_rate": 0.75
+    }
+  },
+  "lerobot_dataset": {
+    "ok": true,
+    "type": "finalize_dataset",
+    "recorded": false,
+    "finalized": false
+  },
+  "rollouts": [
+    {
+      "rollout_index": 0,
+      "success": false,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.33148476481437683,
+        -0.23208197951316833,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 43.59870787952483,
+      "max_inference_ms": 704.7922070050845
+    },
+    {
+      "rollout_index": 1,
+      "success": true,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3524625897407532,
+        0.21098342537879944,
+        -0.6097000241279602
+      ],
+      "policy_steps": 96,
+      "env_steps": 96,
+      "reason": "success",
+      "mean_inference_ms": 36.656797145800134,
+      "max_inference_ms": 196.63983899226878
+    },
+    {
+      "rollout_index": 2,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.37427833676338196,
+        -0.24516719579696655,
+        -0.6097000241279602
+      ],
+      "policy_steps": 35,
+      "env_steps": 35,
+      "reason": "success",
+      "mean_inference_ms": 33.77528728742618,
+      "max_inference_ms": 161.88498699921183
+    },
+    {
+      "rollout_index": 3,
+      "success": false,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3339967727661133,
+        -0.2042481154203415,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 57.082064592977986,
+      "max_inference_ms": 322.4795200076187
+    },
+    {
+      "rollout_index": 4,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.37363970279693604,
+        -0.21516430377960205,
+        -0.6097000241279602
+      ],
+      "policy_steps": 34,
+      "env_steps": 34,
+      "reason": "success",
+      "mean_inference_ms": 65.2154296194032,
+      "max_inference_ms": 321.1855999979889
+    },
+    {
+      "rollout_index": 5,
+      "success": true,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3520948588848114,
+        0.220705047249794,
+        -0.6097000241279602
+      ],
+      "policy_steps": 109,
+      "env_steps": 109,
+      "reason": "success",
+      "mean_inference_ms": 60.89633477103059,
+      "max_inference_ms": 307.82344900944736
+    },
+    {
+      "rollout_index": 6,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.35251089930534363,
+        -0.24155893921852112,
+        -0.6097000241279602
+      ],
+      "policy_steps": 84,
+      "env_steps": 84,
+      "reason": "success",
+      "mean_inference_ms": 61.40074539230444,
+      "max_inference_ms": 318.90201701025944
+    },
+    {
+      "rollout_index": 7,
+      "success": true,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3227623701095581,
+        0.23219861090183258,
+        -0.6097000241279602
+      ],
+      "policy_steps": 118,
+      "env_steps": 118,
+      "reason": "success",
+      "mean_inference_ms": 60.64995121204894,
+      "max_inference_ms": 319.77595599892084
+    },
+    {
+      "rollout_index": 8,
+      "success": false,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.33856984972953796,
+        0.24940158426761627,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 60.18186463353535,
+      "max_inference_ms": 323.06763499218505
+    },
+    {
+      "rollout_index": 9,
+      "success": true,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3890773057937622,
+        0.201651468873024,
+        -0.6097000241279602
+      ],
+      "policy_steps": 109,
+      "env_steps": 109,
+      "reason": "success",
+      "mean_inference_ms": 64.60225364137783,
+      "max_inference_ms": 321.2660660065012
+    },
+    {
+      "rollout_index": 10,
+      "success": true,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.37933745980262756,
+        0.23773051798343658,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "success",
+      "mean_inference_ms": 62.64595034027783,
+      "max_inference_ms": 319.564616002026
+    },
+    {
+      "rollout_index": 11,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.35060635209083557,
+        -0.21129947900772095,
+        -0.6097000241279602
+      ],
+      "policy_steps": 63,
+      "env_steps": 63,
+      "reason": "success",
+      "mean_inference_ms": 64.48567646074234,
+      "max_inference_ms": 316.1496679967968
+    },
+    {
+      "rollout_index": 12,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3991299867630005,
+        -0.21353331208229065,
+        -0.6097000241279602
+      ],
+      "policy_steps": 85,
+      "env_steps": 85,
+      "reason": "success",
+      "mean_inference_ms": 59.79214892910985,
+      "max_inference_ms": 322.95292599883396
+    },
+    {
+      "rollout_index": 13,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.34618207812309265,
+        -0.22317302227020264,
+        -0.6097000241279602
+      ],
+      "policy_steps": 120,
+      "env_steps": 120,
+      "reason": "success",
+      "mean_inference_ms": 57.729120225243,
+      "max_inference_ms": 319.31289700150955
+    },
+    {
+      "rollout_index": 14,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3745754063129425,
+        -0.2422870397567749,
+        -0.6097000241279602
+      ],
+      "policy_steps": 90,
+      "env_steps": 90,
+      "reason": "success",
+      "mean_inference_ms": 61.046220322411195,
+      "max_inference_ms": 323.1614199903561
+    },
+    {
+      "rollout_index": 15,
+      "success": true,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.32994237542152405,
+        0.21692414581775665,
+        -0.6097000241279602
+      ],
+      "policy_steps": 105,
+      "env_steps": 105,
+      "reason": "success",
+      "mean_inference_ms": 62.60351395162399,
+      "max_inference_ms": 319.76902700262144
+    },
+    {
+      "rollout_index": 16,
+      "success": false,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.31463417410850525,
+        0.22177118062973022,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 61.45498722044673,
+      "max_inference_ms": 319.8619129980216
+    },
+    {
+      "rollout_index": 17,
+      "success": true,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3499148190021515,
+        0.21539165079593658,
+        -0.6097000241279602
+      ],
+      "policy_steps": 140,
+      "env_steps": 140,
+      "reason": "success",
+      "mean_inference_ms": 59.58097857125852,
+      "max_inference_ms": 319.5207440003287
+    },
+    {
+      "rollout_index": 18,
+      "success": false,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3085406422615051,
+        0.21464157104492188,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 62.153444853029214,
+      "max_inference_ms": 321.1439720034832
+    },
+    {
+      "rollout_index": 19,
+      "success": false,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3510713577270508,
+        0.24455058574676514,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 61.82811754047483,
+      "max_inference_ms": 321.5320189920021
+    },
+    {
+      "rollout_index": 20,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.39394181966781616,
+        -0.22178448736667633,
+        -0.6097000241279602
+      ],
+      "policy_steps": 80,
+      "env_steps": 80,
+      "reason": "success",
+      "mean_inference_ms": 62.69309417493787,
+      "max_inference_ms": 325.2903060056269
+    },
+    {
+      "rollout_index": 21,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3057571053504944,
+        -0.22804072499275208,
+        -0.6097000241279602
+      ],
+      "policy_steps": 119,
+      "env_steps": 119,
+      "reason": "success",
+      "mean_inference_ms": 64.29689347085116,
+      "max_inference_ms": 321.57642299716827
+    },
+    {
+      "rollout_index": 22,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3751010298728943,
+        -0.2197335660457611,
+        -0.6097000241279602
+      ],
+      "policy_steps": 35,
+      "env_steps": 35,
+      "reason": "success",
+      "mean_inference_ms": 61.20883797079192,
+      "max_inference_ms": 328.13868900120724
+    },
+    {
+      "rollout_index": 23,
+      "success": false,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3379608690738678,
+        -0.20222975313663483,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 61.365638859764054,
+      "max_inference_ms": 322.54698700853623
+    },
+    {
+      "rollout_index": 24,
+      "success": false,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3621114492416382,
+        0.20614902675151825,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 65.12127628666349,
+      "max_inference_ms": 319.9780599970836
+    },
+    {
+      "rollout_index": 25,
+      "success": false,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.31324949860572815,
+        -0.22567208111286163,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 64.07499676725517,
+      "max_inference_ms": 326.4503909886116
+    },
+    {
+      "rollout_index": 26,
+      "success": false,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.36595678329467773,
+        0.24294333159923553,
+        -0.6097000241279602
+      ],
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 57.91336849312453,
+      "max_inference_ms": 325.7376569963526
+    },
+    {
+      "rollout_index": 27,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3783450424671173,
+        -0.20834915339946747,
+        -0.6097000241279602
+      ],
+      "policy_steps": 35,
+      "env_steps": 35,
+      "reason": "success",
+      "mean_inference_ms": 32.79386548466781,
+      "max_inference_ms": 156.95395800867118
+    },
+    {
+      "rollout_index": 28,
+      "success": true,
+      "selected_arm": "right",
+      "prompt": "Use the right arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.3647245466709137,
+        -0.2489275336265564,
+        -0.6097000241279602
+      ],
+      "policy_steps": 41,
+      "env_steps": 41,
+      "reason": "success",
+      "mean_inference_ms": 40.09504619490344,
+      "max_inference_ms": 203.41337300487794
+    },
+    {
+      "rollout_index": 29,
+      "success": true,
+      "selected_arm": "left",
+      "prompt": "Use the left arm to pick the blue cube and place it in the blue basket.",
+      "initial_cube_xyz": [
+        0.39526066184043884,
+        0.20864245295524597,
+        -0.6097000241279602
+      ],
+      "policy_steps": 127,
+      "env_steps": 127,
+      "reason": "success",
+      "mean_inference_ms": 61.80557659077807,
+      "max_inference_ms": 322.03100000333507
+    }
+  ]
+}

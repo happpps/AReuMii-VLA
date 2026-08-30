@@ -1,0 +1,472 @@
+{
+  "policy": "ACT",
+  "task": "IsaacContrib-Pick-Place-Areumii-IK-Abs-Record",
+  "policy_period_s": 0.05,
+  "env_step_dt_s": 0.05,
+  "action_repeat": 1,
+  "horizon_policy_steps": 150,
+  "num_rollouts": 30,
+  "num_success": 9,
+  "success_rate": 0.3,
+  "lerobot_dataset": {
+    "ok": true,
+    "type": "finalize_dataset",
+    "recorded": true,
+    "finalized": true,
+    "repo_id": "1ys1/eval_act_areumii-pickplace-v4",
+    "root": "lerobot_datasets/eval_act_areumii_pickplace_v4",
+    "pushed_to_hub": true
+  },
+  "rollouts": [
+    {
+      "rollout_index": 0,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 4.795245866795692,
+      "max_inference_ms": 322.74748402414843,
+      "initial_cube_xyz": [
+        0.33148476481437683,
+        -0.23208197951316833,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 0
+    },
+    {
+      "rollout_index": 1,
+      "success": false,
+      "policy_steps": 32,
+      "env_steps": 32,
+      "reason": "terminated",
+      "mean_inference_ms": 2.917678408266511,
+      "max_inference_ms": 12.400917010381818,
+      "initial_cube_xyz": [
+        0.3524625897407532,
+        0.21098342537879944,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 1
+    },
+    {
+      "rollout_index": 2,
+      "success": true,
+      "policy_steps": 118,
+      "env_steps": 118,
+      "reason": "success",
+      "mean_inference_ms": 2.844701305532954,
+      "max_inference_ms": 17.57726600044407,
+      "initial_cube_xyz": [
+        0.3339967727661133,
+        -0.2042481154203415,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 2
+    },
+    {
+      "rollout_index": 3,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.81714104115963,
+      "max_inference_ms": 15.51897102035582,
+      "initial_cube_xyz": [
+        0.37363970279693604,
+        -0.21516430377960205,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 3
+    },
+    {
+      "rollout_index": 4,
+      "success": false,
+      "policy_steps": 103,
+      "env_steps": 103,
+      "reason": "terminated",
+      "mean_inference_ms": 2.8544355164625617,
+      "max_inference_ms": 12.762400001520291,
+      "initial_cube_xyz": [
+        0.3520948588848114,
+        0.220705047249794,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 4
+    },
+    {
+      "rollout_index": 5,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.8882596796999374,
+      "max_inference_ms": 14.174344018101692,
+      "initial_cube_xyz": [
+        0.3227623701095581,
+        0.23219861090183258,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 5
+    },
+    {
+      "rollout_index": 6,
+      "success": true,
+      "policy_steps": 52,
+      "env_steps": 52,
+      "reason": "success",
+      "mean_inference_ms": 2.966753499304804,
+      "max_inference_ms": 13.472530990839005,
+      "initial_cube_xyz": [
+        0.33856984972953796,
+        0.24940158426761627,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 6
+    },
+    {
+      "rollout_index": 7,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.885352838978482,
+      "max_inference_ms": 15.625449013896286,
+      "initial_cube_xyz": [
+        0.3890773057937622,
+        0.201651468873024,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 7
+    },
+    {
+      "rollout_index": 8,
+      "success": true,
+      "policy_steps": 49,
+      "env_steps": 49,
+      "reason": "success",
+      "mean_inference_ms": 2.87409461274439,
+      "max_inference_ms": 13.659032993018627,
+      "initial_cube_xyz": [
+        0.37933745980262756,
+        0.23773051798343658,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 8
+    },
+    {
+      "rollout_index": 9,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.809034180439388,
+      "max_inference_ms": 15.546946000540629,
+      "initial_cube_xyz": [
+        0.35060635209083557,
+        -0.21129947900772095,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 9
+    },
+    {
+      "rollout_index": 10,
+      "success": true,
+      "policy_steps": 34,
+      "env_steps": 34,
+      "reason": "success",
+      "mean_inference_ms": 2.8901220888228103,
+      "max_inference_ms": 13.254946999950334,
+      "initial_cube_xyz": [
+        0.3991299867630005,
+        -0.21353331208229065,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 10
+    },
+    {
+      "rollout_index": 11,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.764536247123033,
+      "max_inference_ms": 14.557502989191562,
+      "initial_cube_xyz": [
+        0.34618207812309265,
+        -0.22317302227020264,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 11
+    },
+    {
+      "rollout_index": 12,
+      "success": true,
+      "policy_steps": 34,
+      "env_steps": 34,
+      "reason": "success",
+      "mean_inference_ms": 3.031909583917107,
+      "max_inference_ms": 17.60966601432301,
+      "initial_cube_xyz": [
+        0.3745754063129425,
+        -0.2422870397567749,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 12
+    },
+    {
+      "rollout_index": 13,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.8641402618571496,
+      "max_inference_ms": 16.44851700984873,
+      "initial_cube_xyz": [
+        0.32994237542152405,
+        0.21692414581775665,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 13
+    },
+    {
+      "rollout_index": 14,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.8127933475965015,
+      "max_inference_ms": 13.686893013073131,
+      "initial_cube_xyz": [
+        0.31463417410850525,
+        0.22177118062973022,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 14
+    },
+    {
+      "rollout_index": 15,
+      "success": true,
+      "policy_steps": 69,
+      "env_steps": 69,
+      "reason": "success",
+      "mean_inference_ms": 2.8988121012461954,
+      "max_inference_ms": 11.980454990407452,
+      "initial_cube_xyz": [
+        0.3499148190021515,
+        0.21539165079593658,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 15
+    },
+    {
+      "rollout_index": 16,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.880028345195266,
+      "max_inference_ms": 13.594453979749233,
+      "initial_cube_xyz": [
+        0.3085406422615051,
+        0.21464157104492188,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 16
+    },
+    {
+      "rollout_index": 17,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.7585759526118636,
+      "max_inference_ms": 12.61197598068975,
+      "initial_cube_xyz": [
+        0.3510713577270508,
+        0.24455058574676514,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 17
+    },
+    {
+      "rollout_index": 18,
+      "success": true,
+      "policy_steps": 33,
+      "env_steps": 33,
+      "reason": "success",
+      "mean_inference_ms": 2.948399391519188,
+      "max_inference_ms": 12.327292002737522,
+      "initial_cube_xyz": [
+        0.39394181966781616,
+        -0.22178448736667633,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 18
+    },
+    {
+      "rollout_index": 19,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.799175786009679,
+      "max_inference_ms": 13.714778004214168,
+      "initial_cube_xyz": [
+        0.3057571053504944,
+        -0.22804072499275208,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 19
+    },
+    {
+      "rollout_index": 20,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.8632968598200628,
+      "max_inference_ms": 14.440561004448682,
+      "initial_cube_xyz": [
+        0.3751010298728943,
+        -0.2197335660457611,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 20
+    },
+    {
+      "rollout_index": 21,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.86930463820075,
+      "max_inference_ms": 14.98730800813064,
+      "initial_cube_xyz": [
+        0.3379608690738678,
+        -0.20222975313663483,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 21
+    },
+    {
+      "rollout_index": 22,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.857114186626859,
+      "max_inference_ms": 15.334986004745588,
+      "initial_cube_xyz": [
+        0.3621114492416382,
+        0.20614902675151825,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 22
+    },
+    {
+      "rollout_index": 23,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.890436926002925,
+      "max_inference_ms": 19.03682600823231,
+      "initial_cube_xyz": [
+        0.31324949860572815,
+        -0.22567208111286163,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 23
+    },
+    {
+      "rollout_index": 24,
+      "success": true,
+      "policy_steps": 88,
+      "env_steps": 88,
+      "reason": "success",
+      "mean_inference_ms": 2.801516910205299,
+      "max_inference_ms": 12.9707730084192,
+      "initial_cube_xyz": [
+        0.36595678329467773,
+        0.24294333159923553,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 24
+    },
+    {
+      "rollout_index": 25,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.8641083202091977,
+      "max_inference_ms": 13.866920984582976,
+      "initial_cube_xyz": [
+        0.3783450424671173,
+        -0.20834915339946747,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 25
+    },
+    {
+      "rollout_index": 26,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.8441700153052807,
+      "max_inference_ms": 15.183008013991639,
+      "initial_cube_xyz": [
+        0.3647245466709137,
+        -0.2489275336265564,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 26
+    },
+    {
+      "rollout_index": 27,
+      "success": true,
+      "policy_steps": 43,
+      "env_steps": 43,
+      "reason": "success",
+      "mean_inference_ms": 3.1018167880342102,
+      "max_inference_ms": 14.505338011076674,
+      "initial_cube_xyz": [
+        0.39526066184043884,
+        0.20864245295524597,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 27
+    },
+    {
+      "rollout_index": 28,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.9024615872185677,
+      "max_inference_ms": 15.933916001813486,
+      "initial_cube_xyz": [
+        0.3213924169540405,
+        0.24520225822925568,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 28
+    },
+    {
+      "rollout_index": 29,
+      "success": false,
+      "policy_steps": 150,
+      "env_steps": 150,
+      "reason": "horizon",
+      "mean_inference_ms": 2.9477806728876508,
+      "max_inference_ms": 17.837052000686526,
+      "initial_cube_xyz": [
+        0.3644978404045105,
+        0.22275739908218384,
+        -0.6097000241279602
+      ],
+      "lerobot_episode_index": 29
+    }
+  ]
+}

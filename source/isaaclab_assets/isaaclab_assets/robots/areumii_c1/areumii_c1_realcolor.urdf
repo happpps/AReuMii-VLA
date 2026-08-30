@@ -1,0 +1,875 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="areumii">
+  <material name="silver">
+    <color rgba="0.650 0.650 0.680 1.000" />
+  </material>
+  <material name="black">
+    <color rgba="0.025 0.025 0.025 1.000" />
+  </material>
+  <transmission name="shoulder_roll_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_roll_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shoulder_roll_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="shouler_yaw_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shouler_yaw_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shouler_yaw_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="elbow_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="elbow_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="elbow_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="wrist_roll_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_roll_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_roll_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="wrist_yaw_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_yaw_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_yaw_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="wrist_pitch_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_pitch_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_pitch_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="shoulder_yaw_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_yaw_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shoulder_yaw_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="elbow_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="elbow_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="elbow_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="wrist_roll_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_roll_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_roll_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="wrist_yaw_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_yaw_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_yaw_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="wrist_pitch_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_pitch_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_pitch_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="shoulder_roll_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_roll_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shoulder_roll_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="shoulder_pitch_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_pitch_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shoulder_pitch_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="shoulder_pitch_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_pitch_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shoulder_pitch_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="gripper_left_finger_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="gripper_left_finger_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="gripper_left_finger_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="gripper_right_finger_joint_L_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="gripper_right_finger_joint_L">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="gripper_right_finger_joint_L_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="gripper_left_finger_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="gripper_left_finger_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="gripper_left_finger_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="gripper_right_finger_joint_R_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="gripper_right_finger_joint_R">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="gripper_right_finger_joint_R_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="control" />
+  </gazebo>
+  <gazebo reference="base_link">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+  </gazebo>
+  <gazebo reference="shoulder_roll_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="shoulder_yaw_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="elbow_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wrist_roll_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wrist_yaw_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wrist_pitch_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="shoulder_yaw_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="elbow_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wrist_roll_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wrist_yaw_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wrist_pitch_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="shoulder_roll_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="shoulder_pitch_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="shoulder_pitch_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="gripper_left_finger_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="gripper_right_finger_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="gripper_hand_link_L_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="gripper_left_finger_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="gripper_rigft_finger_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="gripper_hand_link_R_1">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.04548196588833091 0.00896011912781043 0.11132862648581474" />
+      <mass value="42.34644660463847" />
+      <inertia ixx="2.554292" ixy="0.0065" ixz="-0.338156" iyy="3.60291" iyz="0.039964" izz="2.098146" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shoulder_roll_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.005672876043352489 3.1339979782496474e-05 -0.03684067910627864" />
+      <mass value="0.3340823966094149" />
+      <inertia ixx="0.000261" ixy="0.0" ixz="7.1e-05" iyy="0.000281" iyz="-0.0" izz="0.000114" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0195 -0.1285 -0.697" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_roll_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0195 -0.1285 -0.697" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_roll_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shoulder_yaw_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0009546772676588405 0.0018774130841696102 -0.07395003558648805" />
+      <mass value="0.9676200878462953" />
+      <inertia ixx="0.002536" ixy="-1e-06" ixz="-6e-06" iyy="0.002347" iyz="7.9e-05" izz="0.000698" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1285 -0.632" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_yaw_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1285 -0.632" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_yaw_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="elbow_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00045669989760729196 0.02143020437993373 -0.04478697330241932" />
+      <mass value="0.3922374626428495" />
+      <inertia ixx="0.000736" ixy="1e-06" ixz="2e-06" iyy="0.000551" iyz="9.4e-05" izz="0.000306" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.102 -0.519" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/elbow_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.102 -0.519" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/elbow_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wrist_roll_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0013642735283449503 -0.0002267085426351234 -0.03827217797230453" />
+      <mass value="0.3990658407389318" />
+      <inertia ixx="0.000282" ixy="-2e-06" ixz="-2e-06" iyy="0.00038" iyz="-4e-06" izz="0.000209" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1285 -0.43" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_roll_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1285 -0.43" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_roll_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wrist_yaw_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.026586510748965238 0.005855532658888246 -2.2266385374392073e-06" />
+      <mass value="0.2613241384403653" />
+      <inertia ixx="0.000127" ixy="1.1e-05" ixz="-0.0" iyy="0.000108" iyz="-0.0" izz="0.000151" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0675 -0.1285 -0.329" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_yaw_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0675 -0.1285 -0.329" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_yaw_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wrist_pitch_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-1.9355505426657538e-05 -0.011302111750568083 -0.0394863805954056" />
+      <mass value="0.37516490503602995" />
+      <inertia ixx="0.000395" ixy="0.0" ixz="-0.0" iyy="0.000338" iyz="-0.000102" izz="0.00016" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1505 -0.329" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_pitch_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1505 -0.329" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_pitch_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shoulder_yaw_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0011032005449162982 -0.0020188331297732176 -0.0750767379696472" />
+      <mass value="0.9694096497116528" />
+      <inertia ixx="0.00262" ixy="4e-06" ixz="-9e-06" iyy="0.00243" iyz="-7.3e-05" izz="0.000699" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1285 -0.632" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_yaw_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1285 -0.632" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_yaw_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="elbow_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00045678030629101724 -0.021506365281904513 -0.04478718660202469" />
+      <mass value="0.3922408732585464" />
+      <inertia ixx="0.000736" ixy="-1e-06" ixz="2e-06" iyy="0.000551" iyz="-9.4e-05" izz="0.000306" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 0.102 -0.517" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/elbow_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 0.102 -0.517" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/elbow_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wrist_roll_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0013642518491042838 0.00022660261025597705 -0.03830865634304087" />
+      <mass value="0.39906504240238716" />
+      <inertia ixx="0.000282" ixy="2e-06" ixz="-2e-06" iyy="0.00038" iyz="5e-06" izz="0.000209" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1285 -0.428" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_roll_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1285 -0.428" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_roll_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wrist_yaw_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.026586720409161234 -0.005855442015616191 2.305794210399892e-06" />
+      <mass value="0.26132584443274104" />
+      <inertia ixx="0.000127" ixy="-1.1e-05" ixz="0.0" iyy="0.000108" iyz="-0.0" izz="0.000151" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0675 0.1285 -0.327" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_yaw_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0675 0.1285 -0.327" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_yaw_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wrist_pitch_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.9355505422709307e-05 0.011302111750466054 -0.039486380595391335" />
+      <mass value="0.37516490503602995" />
+      <inertia ixx="0.000395" ixy="0.0" ixz="0.0" iyy="0.000338" iyz="0.000102" izz="0.00016" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1505 -0.327" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_pitch_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1505 -0.327" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/wrist_pitch_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shoulder_roll_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.005672876141880855 -3.1339979812972096e-05 -0.03684067910628008" />
+      <mass value="0.3340823966094149" />
+      <inertia ixx="0.000261" ixy="-0.0" ixz="7.1e-05" iyy="0.000281" iyz="0.0" izz="0.000114" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0195 0.1285 -0.697" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_roll_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0195 0.1285 -0.697" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_roll_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shoulder_pitch_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0021936259446642126 -0.03818788060272782 7.773336339078618e-05" />
+      <mass value="0.561850622482128" />
+      <inertia ixx="0.000625" ixy="3.1e-05" ixz="-0.0" iyy="0.000371" iyz="-4e-06" izz="0.000484" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0375 0.0785 -0.697" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_pitch_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0375 0.0785 -0.697" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_pitch_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shoulder_pitch_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0021936258261914462 0.0376587443181641 7.773347778461392e-05" />
+      <mass value="0.5618506222744535" />
+      <inertia ixx="0.000618" ixy="-2.8e-05" ixz="-0.0" iyy="0.000371" iyz="4e-06" izz="0.000477" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0375 -0.0785 -0.697" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_pitch_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0375 -0.0785 -0.697" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/shoulder_pitch_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_left_finger_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0027931503860023563 0.011840377514163752 -0.014718060025974505" />
+      <mass value="0.12431680309868295" />
+      <inertia ixx="3.6e-05" ixy="0.0" ixz="4e-06" iyy="4e-05" iyz="-4e-06" izz="1.6e-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1305 -0.231" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_left_finger_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1305 -0.231" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_left_finger_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_right_finger_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0027931502874174105 -0.011840377441990221 -0.014718060025974228" />
+      <mass value="0.12431680309868362" />
+      <inertia ixx="3.6e-05" ixy="0.0" ixz="-4e-06" iyy="4e-05" iyz="4e-06" izz="1.6e-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1305 -0.231" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_right_finger_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1305 -0.231" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_right_finger_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_hand_link_L_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-3.7284938334339324e-05 -1.033997874105852e-05 -0.008314075769864843" />
+      <mass value="0.12584328013841373" />
+      <inertia ixx="0.000319" ixy="0.0" ixz="0.0" iyy="7e-06" iyz="0.0" izz="0.000319" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1305 -0.2475" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_hand_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 -0.1305 -0.2475" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_hand_link_L_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_left_finger_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0027931502874213726 0.011840377441887012 -0.014718060025966928" />
+      <mass value="0.12431680309868362" />
+      <inertia ixx="3.6e-05" ixy="0.0" ixz="4e-06" iyy="4e-05" iyz="-4e-06" izz="1.6e-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1305 -0.229" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_left_finger_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1305 -0.229" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_left_finger_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_rigft_finger_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00279315038599965 -0.011840377514270833 -0.014718060025965679" />
+      <mass value="0.12431680309868362" />
+      <inertia ixx="3.6e-05" ixy="0.0" ixz="-4e-06" iyy="4e-05" iyz="4e-06" izz="1.6e-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1305 -0.229" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_rigft_finger_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1305 -0.229" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_rigft_finger_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_hand_link_R_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-3.7284839752189936e-05 -1.0340051016299867e-05 -0.008314075769851742" />
+      <mass value="0.12584328013841373" />
+      <inertia ixx="0.000319" ixy="0.0" ixz="0.0" iyy="7e-06" iyz="0.0" izz="0.000319" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1305 -0.2455" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_hand_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0395 0.1305 -0.2455" />
+      <geometry>
+        <mesh filename="package://areumii_description/meshes/gripper_hand_link_R_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="shoulder_roll_joint_L" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.018 0.05 0.0" />
+    <parent link="shoulder_pitch_link_L_1" />
+    <child link="shoulder_roll_link_L_1" />
+    <axis xyz="1.0 -0.0 0.0" />
+    <limit effort="100" lower="-0.261799" upper="2.96706" velocity="100" />
+  </joint>
+  <joint name="shouler_yaw_joint_L" type="revolute">
+    <origin rpy="0 0 0" xyz="0.02 0.0 -0.065" />
+    <parent link="shoulder_roll_link_L_1" />
+    <child link="shoulder_yaw_link_L_1" />
+    <axis xyz="0.0 0.0 -1.0" />
+    <limit effort="100" lower="-1.396263" upper="1.396263" velocity="100" />
+  </joint>
+  <joint name="elbow_joint_L" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0 -0.0265 -0.113" />
+    <parent link="shoulder_yaw_link_L_1" />
+    <child link="elbow_link_L_1" />
+    <axis xyz="0.0 -1.0 -0.0" />
+    <limit effort="100" lower="-0.872665" upper="2.094395" velocity="100" />
+  </joint>
+  <joint name="wrist_roll_joint_L" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0 0.0265 -0.089" />
+    <parent link="elbow_link_L_1" />
+    <child link="wrist_roll_link_L_1" />
+    <axis xyz="0.0 0.0 -1.0" />
+    <limit effort="100" lower="-1.745329" upper="1.745329" velocity="100" />
+  </joint>
+  <joint name="wrist_yaw_joint_L" type="revolute">
+    <origin rpy="0 0 0" xyz="0.028 0.0 -0.101" />
+    <parent link="wrist_roll_link_L_1" />
+    <child link="wrist_yaw_link_L_1" />
+    <axis xyz="-1.0 -0.0 0.0" />
+    <limit effort="100" lower="-0.523599" upper="0.523599" velocity="100" />
+  </joint>
+  <joint name="wrist_pitch_joint_L" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.028 0.022 0.0" />
+    <parent link="wrist_yaw_link_L_1" />
+    <child link="wrist_pitch_link_L_1" />
+    <axis xyz="0.0 -1.0 -0.0" />
+    <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100" />
+  </joint>
+  <joint name="shoulder_yaw_joint_R" type="revolute">
+    <origin rpy="0 0 0" xyz="0.02 0.0 -0.065" />
+    <parent link="shoulder_roll_link_R_1" />
+    <child link="shoulder_yaw_link_R_1" />
+    <axis xyz="0.0 0.0 1.0" />
+    <limit effort="100" lower="-1.396263" upper="1.396263" velocity="100" />
+  </joint>
+  <joint name="elbow_joint_R" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0 0.0265 -0.115" />
+    <parent link="shoulder_yaw_link_R_1" />
+    <child link="elbow_link_R_1" />
+    <axis xyz="0.0 -1.0 -0.0" />
+    <limit effort="100" lower="-0.872665" upper="2.094395" velocity="100" />
+  </joint>
+  <joint name="wrist_roll_joint_R" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0 -0.0265 -0.089" />
+    <parent link="elbow_link_R_1" />
+    <child link="wrist_roll_link_R_1" />
+    <axis xyz="0.0 0.0 1.0" />
+    <limit effort="100" lower="-1.745329" upper="1.745329" velocity="100" />
+  </joint>
+  <joint name="wrist_yaw_joint_R" type="revolute">
+    <origin rpy="0 0 0" xyz="0.028 0.0 -0.101" />
+    <parent link="wrist_roll_link_R_1" />
+    <child link="wrist_yaw_link_R_1" />
+    <axis xyz="1.0 -0.0 0.0" />
+    <limit effort="100" lower="-0.523599" upper="0.523599" velocity="100" />
+  </joint>
+  <joint name="wrist_pitch_joint_R" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.028 -0.022 0.0" />
+    <parent link="wrist_yaw_link_R_1" />
+    <child link="wrist_pitch_link_R_1" />
+    <axis xyz="0.0 -1.0 -0.0" />
+    <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100" />
+  </joint>
+  <joint name="shoulder_roll_joint_R" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.018 -0.05 0.0" />
+    <parent link="shoulder_pitch_link_R_1" />
+    <child link="shoulder_roll_link_R_1" />
+    <axis xyz="-1.0 -0.0 0.0" />
+    <limit effort="100" lower="-0.261799" upper="2.96706" velocity="100" />
+  </joint>
+  <joint name="shoulder_pitch_joint_R" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0375 -0.0785 0.697" />
+    <parent link="base_link" />
+    <child link="shoulder_pitch_link_R_1" />
+    <axis xyz="-0.0 1.0 -0.0" />
+    <limit effort="100" lower="-3.141593" upper="3.141593" velocity="100" />
+  </joint>
+  <joint name="shoulder_pitch_joint_L" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0375 0.0785 0.697" />
+    <parent link="base_link" />
+    <child link="shoulder_pitch_link_L_1" />
+    <axis xyz="-0.0 1.0 -0.0" />
+    <limit effort="100" lower="-3.141593" upper="3.141593" velocity="100" />
+  </joint>
+  <joint name="gripper_left_finger_joint_L" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.0 0.0 -0.0165" />
+    <parent link="gripper_hand_link_L_1" />
+    <child link="gripper_left_finger_link_L_1" />
+    <axis xyz="0.0 1.0 -0.0" />
+    <limit effort="100" lower="0.0" upper="0.03" velocity="100" />
+  </joint>
+  <joint name="gripper_right_finger_joint_L" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.0 0.0 -0.0165" />
+    <parent link="gripper_hand_link_L_1" />
+    <child link="gripper_right_finger_link_L_1" />
+    <axis xyz="0.0 1.0 -0.0" />
+    <limit effort="100" lower="-0.03" upper="0.0" velocity="100" />
+  </joint>
+  <joint name="gripper_hand_joint_L" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0 -0.02 -0.0815" />
+    <parent link="wrist_pitch_link_L_1" />
+    <child link="gripper_hand_link_L_1" />
+  </joint>
+  <joint name="gripper_left_finger_joint_R" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.0 0.0 -0.0165" />
+    <parent link="gripper_hand_link_R_1" />
+    <child link="gripper_left_finger_link_R_1" />
+    <axis xyz="0.0 1.0 -0.0" />
+    <limit effort="100" lower="0.0" upper="0.03" velocity="100" />
+  </joint>
+  <joint name="gripper_right_finger_joint_R" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.0 0.0 -0.0165" />
+    <parent link="gripper_hand_link_R_1" />
+    <child link="gripper_rigft_finger_link_R_1" />
+    <axis xyz="0.0 1.0 -0.0" />
+    <limit effort="100" lower="-0.03" upper="0.0" velocity="100" />
+  </joint>
+  <joint name="gripper_hand_joint_R" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0 0.02 -0.0815" />
+    <parent link="wrist_pitch_link_R_1" />
+    <child link="gripper_hand_link_R_1" />
+  </joint>
+</robot>

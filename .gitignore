@@ -86,3 +86,33 @@ _build
 
 # Superpowers (Claude Code plugin artifacts)
 docs/superpowers/
+
+
+
+## 아름이용 추가
+
+# local environments
+env_isaaclab/
+.venv/
+
+# datasets / outputs
+datasets/
+lerobot_datasets/
+outputs/
+wandb/
+
+# vscode cache
+.vscode/browse.vc.db*
+.vscode/*.db*
+
+# python cache
+__pycache__/
+*.pyc
+
+# build artifacts
+*.o
+*.d
+
+# large generated data
+*.hdf5
+*.mp4
