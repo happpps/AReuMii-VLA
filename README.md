@@ -67,6 +67,11 @@ scripts/areumii_lerobot_inference/
 
 ### Real Robot Teleoperation
 
+Standalone XR teleoperation, URDF configuration, UDP bridges, and Docker setup
+are maintained in [AReuMii-Teleop](https://github.com/happpps/AReuMii-Teleop).
+Use that repository for ongoing real-robot teleoperation development.
+The local `real_teleop/` directory retains the existing integration scripts.
+
 ```text
 real_teleop/
 ```
@@ -118,7 +123,7 @@ Large datasets, HDF5 demonstrations, model checkpoints, and training outputs are
 
 The AReuMii URDF files are included in this repository.
 
-The generated Isaac Sim USD asset is not included.  
+The generated Isaac Sim USD asset is not included.
 The simulation expects:
 
 ```text
@@ -157,11 +162,11 @@ are derived from NVIDIA Isaac Teleop / Hugging Face LeRobot integration code and
 
 ## Upstream
 
-- NVIDIA Isaac Lab  
+- NVIDIA Isaac Lab
   https://github.com/isaac-sim/IsaacLab
 
-- NVIDIA Isaac Teleop  
+- NVIDIA Isaac Teleop
   https://github.com/NVIDIA/IsaacTeleop
 
-- Hugging Face LeRobot  
+- Hugging Face LeRobot
   https://github.com/huggingface/lerobot
